@@ -43,7 +43,7 @@ Prodcut.objects.all()
 Product.objects.create(title='t1',description='d1', price=2.33,summary='s1')
 ```
 
-## Changing Model
+## 3. Changing Model
 
 Change a field in the defined model:
 - delete all files under migrations folder and db file 
@@ -87,6 +87,16 @@ dir(obj)
 - main templates folder overrides the templates folders under apps
 
 
-## Django Model Forms
+## 4. Django Model Forms
 
 - Create  ``forms.py`` file under ``products``
+
+#### Raw HTML Form
+
+- Data from POST method can be used in the backend as in ``products.view.product_create_view_raw_html()``
+
+#### Pure Django Form
+
+- [Django Form Fields](https://docs.djangoproject.com/en/3.1/ref/forms/fields/)
+- Django forms do validations automatically.
+- See ``products.forms.RawProductForm``
