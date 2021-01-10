@@ -4,6 +4,15 @@ from .forms import ProductForm
 # Create your views here.
 
 
+def product_create_view_raw_html(request):
+    if request.method == 'POST':
+        title = request.POST.get("title")
+        print(title)
+        # Product.objects.create(title=title)
+    context = {}
+    return render(request, "products/product_create.html", context)
+
+
 def product_create_view(request):
     form = ProductForm(request.POST or None)
     if form.is_valid():
