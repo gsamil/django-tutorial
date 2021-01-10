@@ -70,3 +70,14 @@ see ``about.html`` and ``pages/views.py`` for template context example usage of 
 - [built-in tags](https://docs.djangoproject.com/en/3.1/ref/templates/builtins/#built-in-tag-reference)
 - [built-in filters](https://docs.djangoproject.com/en/3.1/ref/templates/builtins/#built-in-filter-reference)
 - generally we want to deal with this work in view.
+
+#### Render data from Database
+
+- start shell under src
+```python
+from produts.models import Product
+obj = Product.objects.get(id=1)
+dir(obj)
+```
+
+- see ``products/views.py -> product_detail_view``
