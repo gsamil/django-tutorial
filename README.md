@@ -81,3 +81,7 @@ dir(obj)
 ```
 
 - see ``products/views.py -> product_detail_view``
+
+#### Django Templates with Apps
+
+- main templates folder overrides the templates folders under apps
