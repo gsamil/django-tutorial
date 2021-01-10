@@ -85,3 +85,8 @@ dir(obj)
 #### Django Templates with Apps
 
 - main templates folder overrides the templates folders under apps
+
+
+## Django Model Forms
+
+- Create  ``forms.py`` file under ``products``
