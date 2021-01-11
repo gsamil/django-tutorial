@@ -101,7 +101,6 @@ dir(obj)
 - Django forms do validations automatically.
 - See ``products.forms.RawProductForm``
 
-
 #### Form Widgets
 
 - [Widgets](https://docs.djangoproject.com/en/3.1/ref/forms/widgets/)
@@ -109,3 +108,7 @@ dir(obj)
 - Initial value ``forms.DecimaField(initial=5.4)``
 - ``forms.CharField(label='')``
 - See ``products -> forms.py`` for more.
+
+#### Form Validation Methods
+
+- See ``products.forms.ProductForm.clean_title()``
