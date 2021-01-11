@@ -100,3 +100,12 @@ dir(obj)
 - [Django Form Fields](https://docs.djangoproject.com/en/3.1/ref/forms/fields/)
 - Django forms do validations automatically.
 - See ``products.forms.RawProductForm``
+
+
+#### Form Widgets
+
+- [Widgets](https://docs.djangoproject.com/en/3.1/ref/forms/widgets/)
+- if you want a field not to be required : ``forms.CharField(required=False)`` (Default is ``True``.)
+- Initial value ``forms.DecimaField(initial=5.4)``
+- ``forms.CharField(label='')``
+- See ``products -> forms.py`` for more.
