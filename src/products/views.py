@@ -4,6 +4,22 @@ from .forms import ProductForm, RawProductForm
 # Create your views here.
 
 
+def render_initial_data(request):
+    initial_data = {
+        'title': 'I set this title as initial value'
+    }
+    # form = RawProductForm(request.POST or None, initial=initial_data)
+    # We can use model form instead of Django form
+    obj = Product.objects.get(id=2)
+    form = ProductForm(request.POST or None, initial=initial_data, instance=obj)
+    if form.is_valid():
+        form.save()
+    context = {
+        'form': form
+    }
+    return render(request, "products/product_create.html", context)
+
+
 # def product_create_view_form(request):
 #     form = RawProductForm()
 #     if request.method == "POST":

@@ -112,3 +112,7 @@ dir(obj)
 #### Form Validation Methods
 
 - See ``products.forms.ProductForm.clean_title()``
+
+#### Initial Values for Forms
+
+- See ``products.views.render_initial_data()``
