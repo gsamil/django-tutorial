@@ -125,3 +125,7 @@ dir(obj)
 
 - See ``products.views.dynamic_lookup_view().get_object_or_404``
 
+#### Delete and Confirm
+
+- See ``products.views.product_delete_view()``
+
