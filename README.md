@@ -129,3 +129,7 @@ dir(obj)
 
 - See ``products.views.product_delete_view()``
 
+#### View a list of Database Objects
+
+- See ``products.views.product_list_view()``
+
