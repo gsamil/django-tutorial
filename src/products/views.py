@@ -4,6 +4,14 @@ from .forms import ProductForm, RawProductForm
 # Create your views here.
 
 
+def dynamic_lookup_view(request, my_id):
+    obj = Product.objects.get(id=my_id)
+    context = {
+        'object': obj
+    }
+    return render(request, "products/product_detail.html", context)
+
+
 def render_initial_data(request):
     initial_data = {
         'title': 'I set this title as initial value'

@@ -116,3 +116,8 @@ dir(obj)
 #### Initial Values for Forms
 
 - See ``products.views.render_initial_data()``
+
+#### Dynamic URL Routing
+
+-  See ``products.views.dynamic_lookup_view()``
+
