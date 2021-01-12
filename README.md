@@ -121,3 +121,7 @@ dir(obj)
 
 -  See ``products.views.dynamic_lookup_view()``
 
+#### Handle does not exists
+
+- See ``products.views.dynamic_lookup_view().get_object_or_404``
+
