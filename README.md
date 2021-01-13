@@ -140,3 +140,7 @@ dir(obj)
 
 - We can create an instance method on our model or a function that will shortcut this for us. 
 - See ``products.models.Product().get_absolute_url()`` and ``products\templates\products\product_list.html``
+
+#### Django URLs Reverse
+
+- String in the ``products.models.Product().get_absolute_url()`` can be made dynamic as well.
