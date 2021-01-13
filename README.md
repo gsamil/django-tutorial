@@ -133,3 +133,10 @@ dir(obj)
 
 - See ``products.views.product_list_view()``
 
+
+## 4. URLs
+
+#### Dynamic Linking of URLs
+
+- We can create an instance method on our model or a function that will shortcut this for us. 
+- See ``products.models.Product().get_absolute_url()`` and ``products\templates\products\product_list.html``
