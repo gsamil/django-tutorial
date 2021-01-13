@@ -144,3 +144,8 @@ dir(obj)
 #### Django URLs Reverse
 
 - String in the ``products.models.Product().get_absolute_url()`` can be made dynamic as well.
+
+#### In App URLs and Namespacing
+
+- Clean all redundant views.
+- Create a urls.py in products

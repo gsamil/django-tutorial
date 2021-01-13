@@ -5,7 +5,7 @@
 {% for obj in object_list %}
     <!--    <p>{{ obj.id }} - {{ obj.title }}</p>-->
     <!-- Below line can be used to create a link to another URL, however, this is not dynamic -->
-    <p>{{ obj.id }} - <a href="/products/{{ obj.id }}/">{{ obj.get_absolute_url }}</a></p>
+    <p>{{ obj.id }} - <a href="{{ obj.get_absolute_url }}">{{ obj.title }}</a></p>
 {% endfor %}
 
 {% endblock %}
