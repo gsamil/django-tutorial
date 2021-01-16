@@ -48,6 +48,7 @@ Product.objects.create(title='t1',description='d1', price=2.33,summary='s1')
 Change a field in the defined model:
 - delete all files under migrations folder and db file 
 - create the superuser again after modifications
+- if migrations folder are not created, makemigrations <appname>
 
 ## Custom Homepage / URL Routing and Requests
 
@@ -158,6 +159,6 @@ dir(obj)
 - Views can be function based or class based.
 - See ``blog app``
 
-#### Detail View
+#### Detail - Create - Update View
 
-- See ``blog.views.ArticleDetailView``
+- See ``blog.views``
