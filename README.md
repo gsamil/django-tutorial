@@ -39,7 +39,7 @@ Add product to database from shell
 
 ```python
 from products.models import Product
-Prodcut.objects.all()
+Product.objects.all()
 Product.objects.create(title='t1',description='d1', price=2.33,summary='s1')
 ```
 
@@ -75,7 +75,7 @@ see ``about.html`` and ``pages/views.py`` for template context example usage of 
 
 - start shell under src
 ```python
-from produts.models import Product
+from products.models import Product
 obj = Product.objects.get(id=1)
 dir(obj)
 ```
@@ -157,3 +157,7 @@ dir(obj)
 
 - Views can be function based or class based.
 - See ``blog app``
+
+#### Detail View
+
+- See ``blog.views.ArticleDetailView``
