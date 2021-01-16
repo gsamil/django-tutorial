@@ -159,6 +159,6 @@ dir(obj)
 - Views can be function based or class based.
 - See ``blog app``
 
-#### Detail - Create - Update View
+#### Detail - Create - Update - Delete View
 
 - See ``blog.views``
