@@ -149,3 +149,11 @@ dir(obj)
 
 - Clean all redundant views.
 - Create a urls.py in products
+
+
+## 5. Class Based Views
+
+#### ListView
+
+- Views can be function based or class based.
+- See ``blog app``
